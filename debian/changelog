@@ -1,0 +1,48 @@
+xcb-util-cursor (0.1.1-4) unstable; urgency=medium
+
+  * Team upload.
+  * Replace hard-coded multiarch-support Pre-Depends
+
+ -- Andreas Henriksson <andreas@fatal.se>  Mon, 10 Jul 2017 23:46:50 +0200
+
+xcb-util-cursor (0.1.1-3) unstable; urgency=low
+
+  * use dh-autoreconf instead of autotools-dev to fix FTBFS on ppc64el (by
+    Logan Rosen) (Closes: #734686)
+  * bump standards version (no changes necessary)
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Sun, 12 Jan 2014 21:41:41 +0100
+
+xcb-util-cursor (0.1.1-2) unstable; urgency=low
+
+  * Add Depends: libxcb-image0-dev, libxcb-render0-dev, libxcb1-dev to have
+    all Requires.private libraries available (necessary for static builds)
+    (Closes: #732711)
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Sat, 21 Dec 2013 09:42:11 +0100
+
+xcb-util-cursor (0.1.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Sat, 23 Nov 2013 14:59:07 +0100
+
+xcb-util-cursor (0.1.0-2) unstable; urgency=low
+
+  * Add Depends: libxcb-render-util0-dev to libxcb-cursor-dev to enable static
+    builds (Closes: #723750)
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Fri, 15 Nov 2013 18:25:53 +0100
+
+xcb-util-cursor (0.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Enable verbose build logs.
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Wed, 21 Aug 2013 20:02:48 +0200
+
+xcb-util-cursor (0.0.99-1) unstable; urgency=low
+
+  * Initial release (Closes: #718051)
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Sun, 28 Jul 2013 10:35:07 +0200

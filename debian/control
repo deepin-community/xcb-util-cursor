@@ -1,0 +1,54 @@
+Source: xcb-util-cursor
+Priority: extra
+Maintainer: Michael Stapelberg <stapelberg@debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-autoreconf,
+               autoconf,
+               automake,
+               pkg-config,
+               libxcb1-dev,
+               libxcb-render-util0-dev,
+               libxcb-image0-dev,
+               xutils-dev
+Standards-Version: 3.9.5
+Section: libs
+Homepage: http://xcb.freedesktop.org/
+Vcs-Git: git://anonscm.debian.org/collab-maint/xcb-util-cursor.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/xcb-util-cursor.git;a=summary
+
+Package: libxcb-cursor-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libxcb-cursor0 (= ${binary:Version}),
+         ${misc:Depends},
+         libxcb-render-util0-dev,
+         libxcb-image0-dev,
+         libxcb-render0-dev,
+         libxcb1-dev
+Description: utility libraries for X C Binding -- cursor, development files
+ This package contains the header and library files needed to build software
+ using libxcb-cursor, providing port of Xlib's libXcursor functions.
+ .
+ The xcb-util module provides a number of libraries which sit on top of libxcb,
+ the core X protocol library, and some of the extension libraries. These
+ experimental libraries provide convenience functions and interfaces which make
+ the raw X protocol more usable. Some of the libraries also provide client-side
+ code which is not strictly part of the X protocol but which have traditionally
+ been provided by Xlib.
+
+Package: libxcb-cursor0
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: utility libraries for X C Binding -- cursor
+ This package contains the library files needed to run software using
+ libxcb-cursor, providing port of Xlib's libXcursor functions.
+ .
+ The xcb-util module provides a number of libraries which sit on top of libxcb,
+ the core X protocol library, and some of the extension libraries. These
+ experimental libraries provide convenience functions and interfaces which make
+ the raw X protocol more usable. Some of the libraries also provide client-side
+ code which is not strictly part of the X protocol but which have traditionally
+ been provided by Xlib.

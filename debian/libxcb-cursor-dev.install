@@ -1,0 +1,4 @@
+usr/include/xcb/xcb_cursor.h
+usr/lib/*/libxcb-cursor.a
+usr/lib/*/libxcb-cursor.so
+usr/lib/*/pkgconfig/xcb-cursor.pc
