@@ -48,6 +48,9 @@
 # ifndef HAVE_LE32TOH
 #  define le32toh(x) LE_32(x)
 # endif
+#elif defined(HAVE_LIBKERN_OSBYTEORDER_H)
+#include <libkern/OSByteOrder.h>
+#define le32toh(x) OSSwapLittleToHostInt32(x)
 #endif
 
 #include <xcb/xcb.h>

@@ -1,2 +1,2 @@
-version=3
-http://xcb.freedesktop.org/dist/xcb-util-cursor-([0-9.]*)\.tar\.gz
+version=4
+opts=pgpsigurlmangle=s%$%.sig% https://xcb.freedesktop.org/dist/xcb-util-cursor-([0-9.]*)\.tar\.gz

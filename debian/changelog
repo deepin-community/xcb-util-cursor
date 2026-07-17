@@ -1,3 +1,35 @@
+xcb-util-cursor (0.1.5-1) unstable; urgency=medium
+
+  * New upstream version 0.1.5
+
+ -- Jakob Haufe <sur5r@debian.org>  Sun, 26 Jan 2025 21:10:35 +0100
+
+xcb-util-cursor (0.1.4-1) unstable; urgency=medium
+
+  * New upstream version 0.1.4
+  * Update d/docs
+  * Bump Standards-Version
+  * Switch to DH 13
+
+ -- Jakob Haufe <sur5r@debian.org>  Mon, 20 Feb 2023 23:44:35 +0100
+
+xcb-util-cursor (0.1.1-5) unstable; urgency=medium
+
+  [ Jelmer Vernooĳ ]
+  * Migrate repository from alioth to salsa.
+
+  [ Jakob Haufe ]
+  * Take over package from Michael Stapelberg
+  * Priority extra is now optional
+  * Switch to DH 10
+  * Update watchfile, add upstream key
+  * Update d/copyright
+  * Add R³: no
+  * Add B-D-P to symbols file
+  * Add hardening flags
+
+ -- Jakob Haufe <sur5r@debian.org>  Fri, 17 Feb 2023 15:53:07 +0100
+
 xcb-util-cursor (0.1.1-4) unstable; urgency=medium
 
   * Team upload.
